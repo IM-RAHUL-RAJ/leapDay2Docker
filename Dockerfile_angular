@@ -31,7 +31,7 @@ RUN printf 'server {\n\
 RUN rm -rf /usr/share/nginx/html/*
 
 # ✅ Copy only the browser build output (Angular 18 creates dist/<app>/browser)
-COPY --from=build /app/dist/trade-x/browser /usr/share/nginx/html/
+COPY --from=build /app/dist/<project-name>/browser /usr/share/nginx/html/
 
 EXPOSE 80
 CMD ["nginx", "-g", "daemon off;"]
