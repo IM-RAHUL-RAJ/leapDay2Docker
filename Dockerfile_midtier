@@ -2,7 +2,7 @@
 FROM node:18-alpine
 
 # Step 2: Set the working directory inside the container
-WORKDIR /midtier-trade-marshals
+WORKDIR /app
 
 # Step 3: Copy package.json and package-lock.json (or yarn.lock) to the container
 COPY package*.json ./
