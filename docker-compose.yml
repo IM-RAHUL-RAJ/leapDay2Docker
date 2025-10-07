@@ -14,7 +14,6 @@ services:
     image: leapfse#.jfrog.io/fse#team#/a######-fmts:1.0
     ports:
       - "3000:3000"
-  # network_mode removed to use default bridge network
 
   mid-nodejs:
     image: leapfse#.jfrog.io/fse#team#/a######-midtier:1.0
